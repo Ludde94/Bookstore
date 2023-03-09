@@ -18,7 +18,7 @@ let persons,
 
 async function start() {
 
-    persons = await getJSON('/json/books.json');
+    persons = await getJSON('/public/books.json');
 
     displayPersons();
 
@@ -49,7 +49,9 @@ function displayPersons() {
     }) => /*html*/
     
 
-  'html here');
+  '<h1>hejsan</h1>'
+  
+  )
 
     document.querySelector('.book-list').innerHTML = htmlArray.join('');
 
