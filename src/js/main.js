@@ -33,7 +33,8 @@ function displayPersons() {
     let htmlArray = filteredPersons.map(
       ({ id, title, author, description, category, price, img }) =>
         `<div class="col-lg-3 bookrow" data-id="${id}">
-           <img class="pic" src="${img}" />
+          <a href="#" class="img-link" data-description="${description}">
+          <img class="pic" src="${img}" title="Click to see more details"/></a>
            <h6>${title}</h6>
            <p>${author}</p>
            <button class="btn btn-success button"><p>${price}:-</p>
@@ -54,5 +55,16 @@ function displayPersons() {
       });
     }}
 
+
+
+    
+
+let getPersonsById = async eventId => {
+  /*const book = persons.find((person) => person.id === eventId);
+  return book;*/
+  alert(`You clicked a button with ID: ${eventId}`); 
+}
+
+document.getElementById('checkoutbutton').addEventListener("click", getPersonsById)
 
 start();
