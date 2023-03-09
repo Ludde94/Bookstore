@@ -1,1 +1,82 @@
 @import "~bootstrap/scss/bootstrap";
+
+
+// Add extra top margin to the first row
+// in the main element
+// because our navbar is fixed
+main .row:first-of-type {
+    margin-top: 80px;
+  }
+  
+  // Some styling for photos
+  // the height in viewports widths
+  // helps keeping nice proportions
+  .photo {
+    // 100% of parent element (col):s width
+    width: 100%;
+    // make the image the same height as it width
+    // (a new property, added to css in 2022)
+    aspect-ratio: 1 / 1;
+    // do not scale the image unproportionally
+    // instead cut off part of it,
+    // (same prinicple as background-size: cover
+    // for background images)
+    object-fit: cover;
+  }
+  
+  .logo {
+    color: rgb(169, 190, 218);
+    font-family: 'Open Sans';
+    display: inline-block;
+    margin-top: -5px;
+  }
+  
+  // More margin/space between the logo and
+  // the menu when not hamburger-menu
+  // (on bigger screens)
+  @media only screen and (min-width: 992px) {
+    .logo {
+    margin-right: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:xx-large;
+    }
+  }
+  
+  .div {
+    display: inline-flex;
+  }
+  
+  .nav-link{
+    font-family: 'Open Sans', sans-serif;
+    font-size:large;
+    color: rgb(169, 190, 218);
+  }
+  
+  .footer {
+    padding-top: 20px;
+    background-color: #272727;
+  }
+  
+  .dropdown-item{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(169, 190, 218);
+  }
+  
+  .button{
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #272727;
+    border: 2px solid #1c1fc7;
+  }
+  
+  .button:hover{
+    background-color: rgb(169, 190, 218);
+    border: 2px solid #1c1fc7;
+  }
+  
+  .button:active{
+  background-color: blue;
+  }
+  .bg-primary{
+    background-color: #272727 !important;
+  }
