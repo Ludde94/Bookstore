@@ -127,3 +127,45 @@ main .row:first-of-type {
   font-size: larger;
   color: #272727;
 }
+.modal-header {
+  padding: 2px 16px;
+  background-color: #272727;
+  border-color: #1c1fc7 ;
+  border-width: 3px;
+  color: white;
+}
+
+.modal-body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 16px;
+  background-color: #272727;
+  border-color: #1c1fc7 ;
+  border-width: 3px;
+  color: white;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #272727;
+  width: 50%;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+  opacity: 0.87;
+  
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}

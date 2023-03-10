@@ -5,6 +5,7 @@ import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 
 import { getJSON } from './utils/getJSON';
+const shoppingCart = [];
 
 let persons,
     chosenHobbyFilter = 'all',
@@ -50,9 +51,9 @@ function displayPersons() {
     buttons[i].addEventListener('click', (event) => {
       const bookRow = event.target.closest('.bookrow');
       const id = bookRow.getAttribute('data-id') || bookRow.id;
-      const book = persons.find((person) => person.id === id);
-      alert(`You clicked a button with ID: ${id}`); 
-      //addToCart(id)
+      const book = persons.find((person) => person.id === id); 
+      shoppingCart.push(book);
+      showShoppingcart(shoppingCart)
     });
   }
 
@@ -63,11 +64,62 @@ function displayPersons() {
       const id = bookRow.getAttribute('data-id') || bookRow.id;
       const book = persons.find((person) => person.id === id);
       displayInformation(id);
-      //alert(`You clicked a picture with ID: ${id}`);
     });
   }
 }
 
+//show the shopping cart
+function showShoppingcart(shoppingCart) {
+  const bookIds = new Set(shoppingCart.map(book => book.id));
+  const bookCounts = {};
+  
+  bookIds.forEach(id => {
+    bookCounts[id] = shoppingCart.filter(book => book.id === id).length;
+  });
+  
+  let cartItems = '';
+  
+  bookIds.forEach(id => {
+    const book = shoppingCart.find(book => book.id === id);
+    const count = bookCounts[id];
+    cartItems += `<div>${book.title} (${count}x) - ${book.price}:-</div>`;
+  });
+
+  showModal(cartItems, shoppingCart);
+}
+
+
+//showmodalwithshoppingcart
+function showModal(cartItems) {
+  const modal = document.createElement('div');
+  modal.classList.add('modal');
+  modal.innerHTML = `
+    <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 class = "headtext">Your shopping cart</h2>
+    </div>
+    <div class="modal-body">
+      <p>${cartItems}</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Total including VAT: ${cartItems.price}</h3>
+    </div>
+    </div>
+    `;
+  document.body.appendChild(modal);
+
+  const closeButton = modal.querySelector('.close');
+  closeButton.addEventListener('click', () => {
+    modal.remove();
+  });
+  modal.style.display = 'block';
+}
+
+
+
+
+//showsingelbook
 function displayInformation(id) {
   const correctPerson = persons.find((person) => person.id === id);
   if (!correctPerson) {
@@ -87,13 +139,5 @@ function displayInformation(id) {
   `;
   document.querySelector('.book-list').innerHTML = html;
 }
-
-let getPersonsById = async eventId => {
-  /*const book = persons.find((person) => person.id === eventId);
-  return book;*/
-  alert(`You clicked a button with ID: ${eventId}`); 
-}
-
-document.getElementById('checkoutbutton').addEventListener("click", getPersonsById)
 
 start();
