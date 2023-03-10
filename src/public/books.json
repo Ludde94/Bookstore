@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "HTML & CSS: Design and Build Websites",
     "author": "J Duckett",
     "description": "300 words",
@@ -9,7 +9,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Bootstrap 4 Responsive Web Design",
     "author": "Silvio Moreto",
     "description": "300 words",
@@ -18,7 +18,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "CSS the definitive guide",
     "author": "A Meyer",
     "description": "300 words",
@@ -27,7 +27,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Programming JavaScript",
     "author": "Pontus Walck",
     "description": "300 words",
@@ -36,7 +36,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Head First HTML and CSS: A Learners Guide",
     "author": "Elisabeth Robson",
     "description": "If youre tired of all the technical jargon in HTML/CSS forums and tutorials, this is the book for you.",
@@ -45,7 +45,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 6,
+    "id": "6",
     "title": "A Smarter Way to Learn HTML & CSS: Learn it faster",
     "author": "Mark Myers",
     "description": "In “A Smarter Way to Learn HTML & CSS: Learn it faster. Remember it longer”, ",
@@ -54,7 +54,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 7,
+    "id": "7",
     "title": "Learning Web Design: A Beginners Guide to HTML, CSS, JavaScript, and Web Graphics",
     "author": "Jennifer Robins",
     "description": "Imagine learning HTML/CSS from the most experienced web designers in the world. Well, thats precisely what you get from this book.",
@@ -63,7 +63,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 8,
+    "id": "8",
     "title": "Bootstrap in 24 Hours",
     "author": "Jennifer Kyrnin",
     "description": "In just 24 lessons of one hour or less, Sams Teach Yourself Bootstrap in 24 Hours helps you use the free and open source Bootstrap framework",
@@ -72,7 +72,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 9,
+    "id": "9",
     "title": "Unraveling Bootstrap 3.3",
     "author": "István Novák",
     "description": "With the newest version of Bootstrap(before v4) theres a lot to learn and a lot to practice. Thankfully this book is super affordable and covers over 300 pages of Bootstrap 3 info.",
@@ -81,7 +81,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 10,
+    "id": "10",
     "title": "Jump Start Bootstrap",
     "author": "Syed Fazle Rahman",
     "description": "Get a Jump Start on building applications with Bootstrap today",
@@ -90,7 +90,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 11,
+    "id": "11",
     "title": "Bootstrap by Example",
     "author": "Silvio Moreto",
     "description": "Become an expert in Bootstrap framework, and speed up front-end development and prototyping through real-life examples",
@@ -99,7 +99,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 12,
+    "id": "12",
     "title": "CSS Mastery 3rd Edition",
     "author": "Andy Budd",
     "description": "CSS Mastery is your indispensable guide to cutting-edge CSS development",
@@ -108,7 +108,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 13,
+    "id": "13",
     "title": "CSS Pocket Reference: Visual Presentation for the Web",
     "author": "A. Meyer",
     "description": "When youre working with CSS and need an answer now, this concise yet comprehensive quick reference provides the essential information you need",
@@ -117,7 +117,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 14,
+    "id": "14",
     "title": "HTML, CSS, and JavaScript All in One",
     "author": "Jennifer Kyrnin",
     "description": "Teach Yourself HTML, CSS, and JavaScript All in One combines these three fundamental web development technologies",
@@ -126,7 +126,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 15,
+    "id": "15",
     "title": "CSS: The Missing Manual",
     "author": "David McFarland",
     "description": "This fully updated edition provides the most modern and effective tips",
@@ -135,7 +135,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 16,
+    "id": "16",
     "title": " A Smarter Way to Learn JavaScript",
     "author": "A Myers",
     "description": "This book is written for beginners to JavaScript, but also very useful for experienced developers who want to sharpen their skills",
@@ -144,7 +144,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 17,
+    "id": "17",
     "title": "Head First JavaScript Programming: A Brain-Friendly Guide",
     "author": "Elisabeth Robson",
     "description": "Head First JavaScript Programming is designed with the latest research in cognitive science",
@@ -153,7 +153,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 18,
+    "id": "18",
     "title": "Eloquent JavaScript",
     "author": "Marijn Haverbeke",
     "description": "This latest edition of Eloquent JavaScript dives deep into the JavaScript language to help you write clean and beautiful code",
@@ -162,7 +162,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 19,
+    "id": "19",
     "title": "JavaScript: The Definitive Guide",
     "author": "David Flanagan",
     "description": "his classic has been the go-to JavaScript book for programmers for nearly 25 years.",
@@ -171,7 +171,7 @@
     "img": "/img/CSS.jpg"
   },
   {
-    "id": 20,
+    "id": "20",
     "title": "HTML5 and CSS3 All-in-One For Dummies",
     "author": "A Meyer",
     "description": "Last on our list of the best books to learn HTML and CSS is this all-in-one guide “for dummies,”",

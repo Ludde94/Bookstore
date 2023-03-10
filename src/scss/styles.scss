@@ -99,3 +99,31 @@ main .row:first-of-type {
     margin-top: auto;
   }
   
+.titlefont{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: #272727;
+}
+
+.authorfont{
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  color: #272727;
+  font-style: italic;
+}
+.categoryfont{
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  color: #272727;
+}
+.descriptionfont{
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  color: #272727;
+}
+.pricefont{
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  color: #272727;
+}
