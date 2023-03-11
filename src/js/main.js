@@ -7,31 +7,30 @@ import * as bootstrap from 'bootstrap'
 import { getJSON } from './utils/getJSON';
 const shoppingCart = [];
 
-let persons,
+let Books,
     chosenHobbyFilter = 'all',
     chosenSortOption,
     hobbies = [];
 
 async function start() {
-    persons = await getJSON('/books.json');
-    displayPersons();
+    Books = await getJSON('/books.json');
+    displayBook();
 }
 
-function displayPersons() {
-  // filter according to hobby and call displayPersons
-  let filteredPersons = persons.filter(
+function displayBook() {
+  let filteredBooks = Books.filter(
     ({ hobby }) =>
       chosenHobbyFilter === 'all' || chosenHobbyFilter === hobby
   );
 
   if (chosenSortOption === 'Last name') {
-    sortByLastName(filteredPersons);
+    sortByLastName(filteredBooks);
   }
   if (chosenSortOption === 'Age') {
-    sortByAge(filteredPersons);
+    sortByAge(filteredBooks);
   }
 
-  let htmlArray = filteredPersons.map(
+  let htmlArray = filteredBooks.map(
     ({ id, title, author, description, category, price, img }) =>
       `<div class="col-lg-3 bookrow" data-id="${id}">
       <a href="#" class="img-link">
@@ -51,7 +50,7 @@ function displayPersons() {
     buttons[i].addEventListener('click', (event) => {
       const bookRow = event.target.closest('.bookrow');
       const id = bookRow.getAttribute('data-id') || bookRow.id;
-      const book = persons.find((person) => person.id === id); 
+      const book = Books.find((book) => book.id === id); 
       shoppingCart.push(book);
       showShoppingcart(shoppingCart)
     });
@@ -62,7 +61,7 @@ function displayPersons() {
     imgs[i].addEventListener('click', (event) => {
       const bookRow = event.target.closest('.bookrow');
       const id = bookRow.getAttribute('data-id') || bookRow.id;
-      const book = persons.find((person) => person.id === id);
+      const book = Books.find((book) => book.id === id);
       displayInformation(id);
     });
   }
@@ -121,20 +120,20 @@ function showModal(cartItems) {
 
 //showsingelbook
 function displayInformation(id) {
-  const correctPerson = persons.find((person) => person.id === id);
-  if (!correctPerson) {
-    console.log(`Could not find person with id: ${id}`);
+  const correctBook = Books.find((Books) => Books.id === id);
+  if (!correctBook) {
+    console.log(`Could not find Book with id: ${id}`);
     return;
   } 
   const html = `
-    <div class="col-xxl-12" data-id="${correctPerson.id}">
-      <img class="person" style = "margin-top: 100px;" src="${correctPerson.img}">
+    <div class="col-xxl-12" data-id="${correctBook.id}">
+      <img class="book" style = "margin-top: 100px;" src="${correctBook.img}">
       <br></br>
-      <h6 class = "titlefont">${correctPerson.title}</h6>
-      <p class = "authorfont">${correctPerson.author}</p>
-      <p class = "categoryfont">Category: ${correctPerson.category}</p>
-      <p class = "descriptionfont">Description: ${correctPerson.description}</p>
-      <p class = "pricefont">price: ${correctPerson.price}:-</p>
+      <h6 class = "titlefont">${correctBook.title}</h6>
+      <p class = "authorfont">${correctBook.author}</p>
+      <p class = "categoryfont">Category: ${correctBook.category}</p>
+      <p class = "descriptionfont">Description: ${correctBook.description}</p>
+      <p class = "pricefont">price: ${correctBook.price}:-</p>
     </div>
   `;
   document.querySelector('.book-list').innerHTML = html;

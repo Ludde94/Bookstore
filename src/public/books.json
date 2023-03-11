@@ -6,7 +6,7 @@
     "description": "300 words",
     "category": "HTML",
     "price": 1300,
-    "img": "/img/CSS.jpg"
+    "img": "/img/html.jpg"
   },
   {
     "id": "2",
@@ -15,7 +15,7 @@
     "description": "300 words",
     "category": "bootstrap",
     "price": 1450,
-    "img": "/img/CSS.jpg"
+    "img": "/img/bootstrap1.jpg"
   },
   {
     "id": "3",
@@ -33,7 +33,7 @@
     "description": "300 words",
     "category": "JavaScript",
     "price": 1450,
-    "img": "/img/CSS.jpg"
+    "img": "/img/javascript.jpg"
   },
   {
     "id": "5",
@@ -42,7 +42,7 @@
     "description": "If youre tired of all the technical jargon in HTML/CSS forums and tutorials, this is the book for you.",
     "category": "HTML",
     "price": 250,
-    "img": "/img/CSS.jpg"
+    "img": "/img/html2.jpg"
   },
   {
     "id": "6",
@@ -51,7 +51,7 @@
     "description": "In “A Smarter Way to Learn HTML & CSS: Learn it faster. Remember it longer”, ",
     "category": "HTML",
     "price": 350,
-    "img": "/img/CSS.jpg"
+    "img": "/img/html3.jpg"
   },
   {
     "id": "7",
@@ -60,7 +60,7 @@
     "description": "Imagine learning HTML/CSS from the most experienced web designers in the world. Well, thats precisely what you get from this book.",
     "category": "HTML",
     "price": 200,
-    "img": "/img/CSS.jpg"
+    "img": "/img/html4.jpg"
   },
   {
     "id": "8",
@@ -69,7 +69,7 @@
     "description": "In just 24 lessons of one hour or less, Sams Teach Yourself Bootstrap in 24 Hours helps you use the free and open source Bootstrap framework",
     "category": "bootstrap",
     "price": 300,
-    "img": "/img/CSS.jpg"
+    "img": "/img/bootstrap2.jpg"
   },
   {
     "id": "9",
@@ -78,7 +78,7 @@
     "description": "With the newest version of Bootstrap(before v4) theres a lot to learn and a lot to practice. Thankfully this book is super affordable and covers over 300 pages of Bootstrap 3 info.",
     "category": "bootstrap",
     "price": 500,
-    "img": "/img/CSS.jpg"
+    "img": "/img/bootstrap33.jpg"
   },
   {
     "id": "10",
@@ -87,7 +87,7 @@
     "description": "Get a Jump Start on building applications with Bootstrap today",
     "category": "bootstrap",
     "price": 350,
-    "img": "/img/CSS.jpg"
+    "img": "/img/bootstrap3.jpg"
   },
   {
     "id": "11",
@@ -96,7 +96,7 @@
     "description": "Become an expert in Bootstrap framework, and speed up front-end development and prototyping through real-life examples",
     "category": "bootstrap",
     "price": 400,
-    "img": "/img/CSS.jpg"
+    "img": "/img/bootstrap4.jpg"
   },
   {
     "id": "12",
@@ -105,7 +105,7 @@
     "description": "CSS Mastery is your indispensable guide to cutting-edge CSS development",
     "category": "CSS",
     "price": 300,
-    "img": "/img/CSS.jpg"
+    "img": "/img/css2.jpg"
   },
   {
     "id": "13",
@@ -114,7 +114,7 @@
     "description": "When youre working with CSS and need an answer now, this concise yet comprehensive quick reference provides the essential information you need",
     "category": "CSS",
     "price": 200,
-    "img": "/img/CSS.jpg"
+    "img": "/img/css3.jpg"
   },
   {
     "id": "14",
@@ -123,7 +123,7 @@
     "description": "Teach Yourself HTML, CSS, and JavaScript All in One combines these three fundamental web development technologies",
     "category": "CSS",
     "price": 350,
-    "img": "/img/CSS.jpg"
+    "img": "/img/css4.jpg"
   },
   {
     "id": "15",
@@ -132,16 +132,16 @@
     "description": "This fully updated edition provides the most modern and effective tips",
     "category": "CSS",
     "price": 300,
-    "img": "/img/CSS.jpg"
+    "img": "/img/css1.jpg"
   },
   {
     "id": "16",
-    "title": " A Smarter Way to Learn JavaScript",
+    "title": "A Smarter Way to Learn JavaScript",
     "author": "A Myers",
     "description": "This book is written for beginners to JavaScript, but also very useful for experienced developers who want to sharpen their skills",
     "category": "JavaScript",
     "price": 400,
-    "img": "/img/CSS.jpg"
+    "img": "/img/js5.jpg"
   },
   {
     "id": "17",
@@ -150,7 +150,7 @@
     "description": "Head First JavaScript Programming is designed with the latest research in cognitive science",
     "category": "JavaScript",
     "price": 250,
-    "img": "/img/CSS.jpg"
+    "img": "/img/js6.jpg"
   },
   {
     "id": "18",
@@ -159,7 +159,7 @@
     "description": "This latest edition of Eloquent JavaScript dives deep into the JavaScript language to help you write clean and beautiful code",
     "category": "JavaScript",
     "price": 200,
-    "img": "/img/CSS.jpg"
+    "img": "/img/js3.jpg"
   },
   {
     "id": "19",
@@ -168,7 +168,7 @@
     "description": "his classic has been the go-to JavaScript book for programmers for nearly 25 years.",
     "category": "JavaScript",
     "price": 500,
-    "img": "/img/CSS.jpg"
+    "img": "/img/js4.jpg"
   },
   {
     "id": "20",
@@ -177,14 +177,8 @@
     "description": "Last on our list of the best books to learn HTML and CSS is this all-in-one guide “for dummies,”",
     "category": "HTML",
     "price": 300,
-    "img": "/img/CSS.jpg"
+    "img": "/img/html5.jpg"
   }
-
-
-
-
-
-  
 
 
 ]
