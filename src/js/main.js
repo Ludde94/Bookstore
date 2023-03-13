@@ -15,7 +15,7 @@ let Books,
 async function start() {
     Books = await getJSON('/books.json');
     displayBook();
-    
+    showmodalwithshoppingcart()
 }
 
 function displayBook() {
@@ -68,6 +68,7 @@ function displayBook() {
   }
 }
 
+
 //show the shopping cart
 function showShoppingcart(shoppingCart) {
   const bookIds = new Set(shoppingCart.map(book => book.id));
@@ -84,9 +85,9 @@ function showShoppingcart(shoppingCart) {
     totalPrice += count * book.price;
     cartItems += `<div>${book.title} (${count}x) - ${book.price}:-</div>`;
   });
-
   showModal(cartItems, shoppingCart, totalPrice);
 }
+
 
 
 //showmodalwithshoppingcart
@@ -103,7 +104,7 @@ function showModal(cartItems,shoppingCart,totalPrice) {
       <p>${cartItems}</p>
     </div>
     <div class="modal-footer">
-      <h3>Total including VAT: ${totalPrice}</h3>
+      <h3>Total including VAT: ${totalPrice}:-</h3>
     </div>
     </div>
     `;
@@ -125,17 +126,37 @@ function displayInformation(id) {
     return;
   } 
   const html = `
-    <div class="col-xxl-12" data-id="${correctBook.id}">
-      <img class="book" style = "margin-top: 100px;" src="${correctBook.img}">
-      <br></br>
-      <h6 class = "titlefont">${correctBook.title}</h6>
-      <p class = "authorfont">${correctBook.author}</p>
-      <p class = "categoryfont">Category: ${correctBook.category}</p>
-      <p class = "descriptionfont">Description: ${correctBook.description}</p>
-      <p class = "pricefont">price: ${correctBook.price}:-</p>
+  <div class="col-xxl-12" data-id="${correctBook.id}">
+    <img class="book" style="margin-top: 100px;" src="${correctBook.img}">
+    <br></br>
+    <h6 class="title">${correctBook.title}</h6>
+    <p class="author">${correctBook.author}</p>
+    <p class="category">Category: ${correctBook.category}</p>
+    <p class="description">Description: ${correctBook.description}</p>
+    <p class="price">price: ${correctBook.price}:-</p>
+    <div class="buttons">
+      <button class="btn btn-success buy-button">Buy</button>
+      <button class="btn btn-secondary go-back-button">Go Back</button>
     </div>
-  `;
+  </div>
+`;
+
   document.querySelector('.book-list').innerHTML = html;
+  const goBackButton = document.querySelector('.go-back-button');
+    goBackButton.addEventListener('click', () => {
+    displayBook();})
+
+  const buyButton = document.querySelector('.buy-button');
+  buyButton.addEventListener('click', () => {
+    shoppingCart.push(correctBook);
+    showShoppingcart(shoppingCart);
+  });
 }
+
+document.querySelectorAll('.checkoutbutton').forEach((button) => {
+  button.addEventListener('click', () => {
+    showShoppingcart(shoppingCart);
+  });
+});
 
 start();

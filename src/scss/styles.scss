@@ -164,7 +164,45 @@ main .row:first-of-type {
   opacity: 0.87;
   
 }
-
+.close {
+  font-size: x-large;
+}
+.checkoutbutton{
+  font-size: medium;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #272727;
+  border: 1px solid rgb(169, 190, 218);
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  color:rgb(169, 190, 218);
+}
+.go-back-button{
+  font-size: medium;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #272727;
+  border: 1px solid rgb(169, 190, 218);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color:rgb(169, 190, 218);
+}
+.buy-button{
+  font-size: medium;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #272727;
+  border: 1px solid rgb(169, 190, 218);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color:rgb(169, 190, 218);
+}
+.buy-button:hover{
+  background-color: rgb(169, 190, 218);
+  border: 2px solid #1c1fc7;
+}
+.go-back-button:hover{
+  background-color: rgb(169, 190, 218);
+  border: 2px solid #1c1fc7;
+}
 @keyframes animatetop {
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}
