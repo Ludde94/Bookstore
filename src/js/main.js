@@ -15,6 +15,7 @@ let Books,
 async function start() {
     Books = await getJSON('/books.json');
     displayBook();
+    
 }
 
 function displayBook() {
@@ -71,25 +72,25 @@ function displayBook() {
 function showShoppingcart(shoppingCart) {
   const bookIds = new Set(shoppingCart.map(book => book.id));
   const bookCounts = {};
-  
+  let totalPrice = 0;
   bookIds.forEach(id => {
     bookCounts[id] = shoppingCart.filter(book => book.id === id).length;
   });
   
   let cartItems = '';
-  
   bookIds.forEach(id => {
     const book = shoppingCart.find(book => book.id === id);
     const count = bookCounts[id];
+    totalPrice += count * book.price;
     cartItems += `<div>${book.title} (${count}x) - ${book.price}:-</div>`;
   });
 
-  showModal(cartItems, shoppingCart);
+  showModal(cartItems, shoppingCart, totalPrice);
 }
 
 
 //showmodalwithshoppingcart
-function showModal(cartItems) {
+function showModal(cartItems,shoppingCart,totalPrice) {
   const modal = document.createElement('div');
   modal.classList.add('modal');
   modal.innerHTML = `
@@ -102,7 +103,7 @@ function showModal(cartItems) {
       <p>${cartItems}</p>
     </div>
     <div class="modal-footer">
-      <h3>Total including VAT: ${cartItems.price}</h3>
+      <h3>Total including VAT: ${totalPrice}</h3>
     </div>
     </div>
     `;
@@ -114,8 +115,6 @@ function showModal(cartItems) {
   });
   modal.style.display = 'block';
 }
-
-
 
 
 //showsingelbook
